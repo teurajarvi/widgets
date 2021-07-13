@@ -12,6 +12,8 @@ git clone https://github.com/teurajarvi/widgets.git
 
 > npm install
 
+> npm audit fix
+
 > npm start
 
 ## Stop the React app
