@@ -1,16 +1,20 @@
 import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 const Search = () => {
   const [term, setTerm] = useState("");
 
-  console.log("I RUN WITH EVERY RENDER!");
   // Second parameter on useEffect:
   // 1. [] == run initial render,
   // 2. nothing == 1. + run after every render
   // 3. [data] == 1. + run after every render if data has changed
   useEffect(() => {
-    console.log("I ONLY RUN ALSO");
-  }, []);
+    const search = async () => {
+      await axios.get("fsadsf");
+    };
+
+    search();
+  }, [term]);
 
   return (
     <div>
