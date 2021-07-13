@@ -10,7 +10,15 @@ const Search = () => {
   // 3. [data] == 1. + run after every render if data has changed
   useEffect(() => {
     const search = async () => {
-      await axios.get("fsadsf");
+      await axios.get("https://en.wikipedia.org/w/api.php", {
+        params: {
+          action: "query",
+          list: "search",
+          origin: "*",
+          format: "json",
+          srsearch: term,
+        },
+      });
     };
 
     search();
