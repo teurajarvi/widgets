@@ -27,4 +27,4 @@ from browser: localhost:3000
 
 ## How the React project was initially created
 
-> npx create-react-app youtube_videos
+> npx create-react-app widgets
