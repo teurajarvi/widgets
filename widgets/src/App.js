@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Accordion from "./components/Accordion";
 import Search from "./components/Search";
-import Dropdow from "./components/Dropdown";
+import Dropdown from "./components/Dropdown";
+import Translate from "./components/Translate";
 
 const items = [
   {
@@ -34,6 +35,12 @@ const options = [
 ];
 
 export default () => {
+  return (
+    <div>
+      <Translate />
+    </div>
+  );
+  /**
   const [selected, setSelected] = useState(options[0]);
   const [showDropdown, setShowDropdown] = useState(true);
   return (
@@ -44,6 +51,7 @@ export default () => {
         </button>
         {showDropdown ? (
           <Dropdow
+            label='Select a Color'
             selected={selected}
             onSelectedChange={setSelected}
             options={options}
@@ -57,4 +65,5 @@ export default () => {
       </div>
     </div>
   );
+*/
 };
