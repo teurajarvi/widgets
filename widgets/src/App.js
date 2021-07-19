@@ -38,16 +38,23 @@ export default () => {
   const [showDropdown, setShowDropdown] = useState(true);
   return (
     <div>
-      <button onClick={() => setShowDropdown(!showDropdown)}>
-        Toggle Dropdown
-      </button>
-      {showDropdown ? (
-        <Dropdow
-          selected={selected}
-          onSelectedChange={setSelected}
-          options={options}
-        />
-      ) : null}
+      <div>
+        <button onClick={() => setShowDropdown(!showDropdown)}>
+          Toggle Dropdown
+        </button>
+        {showDropdown ? (
+          <Dropdow
+            selected={selected}
+            onSelectedChange={setSelected}
+            options={options}
+          />
+        ) : null}
+      </div>
+      <div
+        className='text'
+        style={{ color: selected ? selected.value : "black" }}>
+        This is X
+      </div>
     </div>
   );
 };
