@@ -2,6 +2,8 @@
 
 React widgets with Hooks
 
+To see the outcome please visit https://widgets-vert-nine.vercel.app/
+
 ## Clone the project using Git
 
 git clone https://github.com/teurajarvi/widgets.git
